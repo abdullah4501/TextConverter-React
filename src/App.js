@@ -1,13 +1,18 @@
 import './App.css';
+// import About from './components/About';
 import TextForm from './components/TextForm';
 import Navbar from './components/Navbar';
-import React, { useState } from 'react';
+
+
 
 function App() {
   return (
     <>
     <Navbar title="TextUtils" />
-    <TextForm />
+    <div className="container">
+    <TextForm heading="Enter the text below"/>
+    {/* <About /> */}
+    </div>
     </>
   )
 }
