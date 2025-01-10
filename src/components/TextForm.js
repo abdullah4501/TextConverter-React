@@ -30,9 +30,9 @@ export default function TextForm(props) {
 
     return (
         <>
-            <h1 className='mb-4'>{props.heading}</h1>
+            <h1 className='my-4'>{props.heading}</h1>
                 <div className="mb-3">
-                <textarea className="form-control" value={text} onChange={handleOnChange} rows={10}></textarea>
+                <textarea className="form-control" value={text} onChange={handleOnChange} rows={10} style={{backgroundColor:`${props.mode==='light'? '#fff' : '#252525'}`, color: `${props.mode==='light'? '#252525' : '#fff'}`}}></textarea>
                 </div>
 
                 <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
