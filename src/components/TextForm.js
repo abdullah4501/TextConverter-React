@@ -35,11 +35,11 @@ export default function TextForm(props) {
                 <textarea className="form-control" value={text} onChange={handleOnChange} rows={10} style={{backgroundColor:`${props.mode==='light'? '#fff' : '#252525'}`, color: `${props.mode==='light'? '#252525' : '#fff'}`}}></textarea>
                 </div>
 
-                <button className="btn btn-primary mx-1 my-1" onClick={handleUpClick}>Convert to Uppercase</button>
-                <button className="btn btn-primary mx-1 my-1" onClick={handleLoClick}>Convert to Lowercase</button>
-                <button className="btn btn-primary mx-1 my-1" onClick={handleCapClick}>Captilize Each Word</button>
-                <button className="btn btn-primary mx-1 my-1" onClick={handleTogClick}>Convert to Togglecase</button>
-                <button className="btn btn-primary mx-1 my-1" onClick={handleClearClick}>Clear Text</button>
+                <button className={`btn btn-${props.mode==='light'?'primary' : 'dark'} mx-1 my-1 `} onClick={handleUpClick}>Convert to Uppercase</button>
+                <button className={`btn btn-${props.mode==='light'?'primary' : 'dark'} mx-1 my-1 `} onClick={handleLoClick}>Convert to Lowercase</button>
+                <button className={`btn btn-${props.mode==='light'?'primary' : 'dark'} mx-1 my-1 `} onClick={handleCapClick}>Captilize Each Word</button>
+                <button className={`btn btn-${props.mode==='light'?'primary' : 'dark'} mx-1 my-1 `} onClick={handleTogClick}>Convert to Togglecase</button>
+                <button className={`btn btn-${props.mode==='light'?'primary' : 'dark'} mx-1 my-1 `} onClick={handleClearClick}>Clear Text</button>
 
         </>
     )
