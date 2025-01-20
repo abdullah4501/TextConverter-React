@@ -6,8 +6,7 @@ import React, {useState} from 'react'
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  // Link
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -31,11 +30,11 @@ function App() {
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
         <div className="container">
           <Routes>
-            <Route path="/about" 
+            <Route exact path="/about" 
               element={
                 <About />
                 } />
-            <Route path="/" 
+            <Route exact path="/" 
               element={
               <TextForm heading="Enter the text below" mode={mode} />
               } />
